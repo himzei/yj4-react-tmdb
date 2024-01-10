@@ -1,5 +1,6 @@
 import Logo from "../assets/logo.png"; 
 import { BiPlusMedical } from "react-icons/bi";
+import { FaBell } from "react-icons/fa";
 
 export default function NavPage() {
   return (
@@ -30,7 +31,10 @@ export default function NavPage() {
                 <div className="border border-white text-white p-1 text-xs hover:bg-white hover:text-[#032541]">
                     EN
                 </div>
-                <div></div>
+                {/* 벨 아이콘 */}
+                <div className="text-white">
+                    <FaBell />
+                </div>
                 <div></div>
                 <div></div>
             </div>
