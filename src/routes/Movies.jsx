@@ -6,12 +6,11 @@ export default function Movies() {
   const [page, setPage] = useState(1);
 
   useEffect(() => {
-    fetchData(page);
-
+    fetchData();
     setIsLoading(false);
   }, []);
 
-  const fetchData = async (pageNumber) => {
+  const fetchData = async (pageNumber = 1) => {
     try {
       const url = `https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=${pageNumber}`;
       const options = {
