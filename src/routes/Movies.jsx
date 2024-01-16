@@ -9,9 +9,8 @@ export default function Movies() {
     fetchData(page);
 
     setIsLoading(false);
-  }, [page]);
+  }, []);
 
-  console.log(page);
   const fetchData = async (pageNumber) => {
     try {
       const url = `https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=${pageNumber}`;
