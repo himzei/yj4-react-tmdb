@@ -8,8 +8,8 @@ export default function Movies() {
   useEffect(() => {
     fetchData(page);
 
-    // setIsLoading(false);
-  }, []);
+    setIsLoading(false);
+  }, [page]);
 
   console.log(page);
   const fetchData = async (pageNumber) => {

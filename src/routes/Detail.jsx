@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import changeHour from "../lib/changeHour";
 
 export default function Detail() {
-  const { id } = useParams();
   const [detail, setDetail] = useState();
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
